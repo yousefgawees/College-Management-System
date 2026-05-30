@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentHomeSceneController">
+   <left>
+      <VBox prefHeight="398.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="gradeHL" onAction="#gotoMoodle" prefHeight="24.0" prefWidth="99.0" stylesheets="@myStyle.css" text="Moodle" />
+            <Hyperlink fx:id="scheduleHL" layoutX="10.0" layoutY="10.0" onAction="#gotoSchedule" prefHeight="24.0" prefWidth="99.0" stylesheets="@myStyle.css" text="Schedule" />
+            <Hyperlink fx:id="gpaHL" layoutX="10.0" layoutY="34.0" onAction="#gotoGPA" prefHeight="24.0" prefWidth="99.0" stylesheets="@myStyle.css" text="GPA Calculator" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Label fx:id="displayLabel" prefHeight="43.0" prefWidth="613.0" text="Welcome Student" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </Label>
+   </top>
+   <center>
+      <ImageView fitHeight="304.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/university.jpg" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <Label prefHeight="18.0" prefWidth="612.0" text="© 2024 Egyptian University. All rights reserved." BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

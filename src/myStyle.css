@@ -1,0 +1,13 @@
+.hyperlink 
+{
+    -fx-text-fill: #575d63;
+    -fx-underline: false;
+    text-decoration: none;
+    -fx-focus-color: transparent;
+}
+
+.hyperlink:hover
+{
+    -fx-text-fill: black;
+    transition: -fx-text-fill 0.1s;
+}
